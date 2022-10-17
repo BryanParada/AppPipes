@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-comunes',
@@ -64,6 +65,22 @@ heroes = [
     vuela: false
   }
 ]
+
+//Async
+//Observable se ejecuta hasta que tenga una suscripcion
+miObservable = interval(1000);
+
+//test interval
+// constructor(){
+//   this.miObservable.subscribe(console.log);
+// }
+
+valorPromesa = new Promise( (resolve, reject) =>{
+  setTimeout(() =>{
+    resolve('Tenemos data de la promesa');
+  }, 3500);
+
+} );
 
 
 }
