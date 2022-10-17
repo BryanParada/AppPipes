@@ -49,5 +49,21 @@ persona = {
   direccion: 'Santiago, Chile'
 }
 
+//JsonPipe
+heroes = [
+  {
+    nombre: 'Superman',
+    vuela: true
+  },
+  {
+    nombre: 'Robin',
+    vuela: false
+  },
+  {
+    nombre: 'Aquaman',
+    vuela: false
+  }
+]
+
 
 }
