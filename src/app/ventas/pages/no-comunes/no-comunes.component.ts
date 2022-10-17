@@ -8,12 +8,23 @@ import { Component } from '@angular/core';
 })
 export class NoComunesComponent {
 
- nombre: string = 'Juan';
- genero: string = 'masculino';
+  //i18nSelect
+  nombre: string = 'Juan';
+  genero: string = 'masculino';
 
- invitacionMapa = {
-  'masculino': 'invitarlo',
-  'femenino' : 'invitarla'
- };
+  invitacionMapa = {
+    'masculino': 'invitarlo',
+    'femenino' : 'invitarla'
+  };
+
+  //i18nPlural
+  clientes: string[] = ['Maria','Maria','Maria','Maria','Maria',]; //'Maria', 'Pedro'
+
+  clientesMapa = {
+    '=0': 'no tenemos ningún cliente esperando',
+    '=1': 'tenemos un cliente esperando',
+    // 'other': 'tenemos '+ this.clientes.length +'clientes esperando'
+    'other': 'tenemos # clientes esperando'
+  };
 
 }
