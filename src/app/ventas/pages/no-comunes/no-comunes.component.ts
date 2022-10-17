@@ -42,5 +42,12 @@ borrarCliente(){
   this.clientes.pop();  
 }
 
+//KeyValue Pipe
+persona = {
+  nombre: 'Bryan',
+  edad: 30,
+  direccion: 'Santiago, Chile'
+}
+
 
 }
