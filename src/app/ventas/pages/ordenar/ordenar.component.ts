@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { MayusculasPipe } from '../../pipes/mayusculas.pipe';
+import { Component } from '@angular/core'; 
 import { Heroe, Color } from '../../interfaces/ventas.interfaces';
 
 @Component({
